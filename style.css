@@ -1,0 +1,451 @@
+body { margin: 0;
+        padding: 0; 
+        width: 100%; }
+
+
+/*custom fonts*/
+@font-face {
+ font-family: pacifico;
+ src: url("Pacifico.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: pacifico;
+ src: url("Pacifico.ttf") /* TTF file for CSS3 browsers */
+}
+
+/*custom font ends*/
+
+/*animation*/
+@keyframes color_change { 
+
+0% { color: grey; }
+
+25% { color:red; }
+
+50% { color: yellow; }
+
+75% { color: coral; }
+
+100% { color: orange; }
+
+ }
+/*animation ends*/
+
+        /*header section starts*/
+
+.header-section { background: #f8f8f8;
+          width:100% ;
+          margin: 0;
+          box-sizing: border-box;
+          position: fixed;
+          z-index: 100;
+          overflow: hidden;
+          }
+
+.header { width: 960px;
+          margin: 0 auto; }
+
+.logo { float: left;
+        width: 30%;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: grey;
+         }
+
+
+.menu{ float:right;
+       width:70%;
+       overflow: hidden;
+        }
+
+
+.menu ul { list-style: none;
+            margin:0;
+           float:right;
+             }
+
+.menu ul li { display: inline-block;
+              padding-right: 50px;
+              padding-top:20px; }
+
+.menu ul li a { color:black;
+	            text-decoration: none;
+	            font-family: sans-serif;
+	            font-size: 18px;
+	            font-weight: bold; }
+
+
+.menu ul li a:hover { color:#22b4ff; }
+
+#active_text { color:#22b4ff; }
+
+/*header section ends*/
+
+
+/* hero text starts */
+
+.hero-section { width: 100%;
+	            height: 100vh;
+	            background: linear-gradient(45deg, #22b4ff,#bc6363) ;
+                position: relative;
+
+	        }
+
+.hero-text { position: absolute;
+	         text-align: center;
+	         color: white;
+	         /*border: 2px solid black;*/
+	         left: 50%;
+	         top:50%;
+	         transform: translate(-50%,-50%);
+              }
+
+.hero-text h1 { margin: 0;
+             font-size: 55px;
+             font-weight: bold;
+             font-family: pacifico;
+             animation-name: color_change;
+             animation-duration: 5s;
+             animation-iteration-count: infinite;
+              }
+
+.hero-text h3 { margin: 0;
+             font-size: 20px;
+             font-weight: bold;
+             font-family: pacifico; }
+
+.btn-group { width: 100%;
+            display: inline-block;
+            margin-top: 10px; }
+
+
+.btn-group a { text-decoration:none;
+               text-align: center;
+               font-family: sans-serif;
+               font-weight: bold;
+               padding: 5px 5px;
+               width:50% ;
+	       height:35px; 
+           font-weight:bold; 
+           border-radius:5px; 
+           border:1px solid white;
+           color:white;
+           font-size: 18px; 
+           background: none; }
+
+
+.btn-group a:hover { border: none;
+                     background-color: coral; }               
+
+
+
+      /*hero text ends*/
+
+
+/*about me section starts*/
+
+
+.aboutme_section { background: white;
+                    margin: 0;
+                    padding: 50px 0; 
+                    width: 100%;
+                     }
+
+.aboutme { width: 960px; 
+           margin: 0 auto; }
+
+.title_part { text-align: center;
+              margin-bottom: 50px;
+              font-weight: bold;
+              font-family: sans-serif; }
+
+.about_me_info{ overflow: hidden; }
+                 
+
+.leftside { width: 40%;
+            float: left; }
+
+.rightside { width: 50%;
+             float: right;
+             display: inline-block; }
+
+ .rightside p { font-family: sans-serif; }
+
+ .upperpart li { list-style-type: none;
+                 display: inline-block;
+                 padding-right: 50px; 
+                      }
+
+#details { border-bottom: 1px solid #22B4FF;
+            }
+
+#profile:hover { text-decoration: underline; }
+
+.upperpart li a { text-decoration: none;
+                   color:#22b4ff; 
+                   font-family: sans-serif; }
+
+.li a:active { text-decoration: underline; }
+
+.upperpart { padding-right:40px;
+             border-bottom: 1px solid #f0f0f0; 
+              text-align: left;}
+
+/*about me section ends*/
+
+/*skills section starts*/
+
+.skill_section { background: #f8f8f8;
+                 width: 100%;
+                 padding: 50px 0; }
+  
+.skill_container { width: 960px;
+                   margin: 0 auto; }  
+
+.skill_title { text-align: center;
+               font-family: sans-serif; }
+
+
+#html_bar { background-color: #22b4ff;
+              width: 95%; }
+
+#css_bar { background-color: #22b4ff;
+           width: 90%; }
+
+#js_bar { background-color: #22b4ff;
+           width: 80%; }
+
+
+#jq_bar { background-color: #22b4ff;
+           width: 80%; }
+
+
+#php_bar { background-color: #22b4ff;
+           width: 75%; }
+
+
+#lavarel_bar { background-color: #22b4ff;
+               width: 75%; }
+
+#boots_bar { background-color: #22b4ff;
+           width: 100%; }
+
+#ps_bar { background-color: #22b4ff;
+           width: 85%; }
+
+
+/*skills section ends*/
+
+
+/*service section starts*/
+
+
+.service-section { width:100%;
+	               height: 76vh;
+                   background: #f8f8f8;
+                   padding: 50px 0; }
+
+.service-part{ width: 960px;
+               margin: 0 auto;
+               box-sizing: border-box;
+               /*border: 2px solid red;
+*/                }  
+
+.service-title { text-align: center;
+                 font-family: sans-serif; }
+
+.services { /*border: 2px solid red;*/
+            box-sizing: border-box;
+            padding-top: 20px;
+             }
+
+.service{ background: white;
+          /*border: 2px solid green;*/
+          box-sizing: border-box;
+          display: inline-block;
+          width: 20%;
+          margin: 0 2%;
+          text-align: center;
+          /*padding: 10px;*/
+          transition: all 1s; }
+
+.service:hover { box-shadow: 5px 0px 7px 0px grey; }
+
+
+.service-icon { color:#22b4ff;
+                margin-top: 16px }
+
+.service_name { font-family: sans-serif;
+                font-size: 10px; }
+
+ .service p { text-align: center;
+               font-family: sans-serif; }
+
+
+/*service section ends*/
+
+
+/*recent works*/
+ 
+.portfolio_section { background: white;
+                      padding: 50px 0; }
+
+.portfolio_container { width: 960px;
+                       margin: 0 auto;
+                       padding-top: 10px;
+                       padding-left: 20px; }
+
+.portfolio { width: 28%;
+              /*border: 2px solid red;*/
+              position: relative;
+              display: inline-block;
+              padding-left: 20px;
+              padding-top: 20px; }
+
+.portfolio_text{ text-align: center;
+                 font-family: sans-serif; }
+
+.overlay { width: 80%;
+           height: 75%;
+           background: white;
+           position: absolute;
+           margin: 5%;
+           display: none; 
+           padding-left: 5px;
+            /*border: 2px solid red;*/ }
+
+.portfolio img { width: 100%; }
+
+
+.portfolio:hover .overlay { display: block; }
+
+#search_icon { color: #22b4ff;
+               width: 20%;
+               position: absolute;
+               left: 40%;
+               top:35%; }
+
+/*recent works ends*/
+
+/*client review starts*/
+
+.client_review_section{ width: 100%;
+	                    height: 80vh;
+                        background: white;
+                        padding: 50px 0;
+                        /*padding-top: 50px;
+                        margin-top: 100px;*/ }
+
+
+.client_rvw{ width: 960px;
+             margin: 0 auto;
+             font-family: sans-serif; }
+
+.client_rvw img { padding-left: 40%; }
+
+.client_rvw h2 { text-align: center; }
+
+.client_rvw p { text-align: justify; }
+
+.rvw_title { font-family: sans-serif; 
+             text-align: center;
+               overflow: hidden;
+               } 
+
+ 
+.client1 { width: 40%;
+           float: left; 
+           padding-top: 20px;}
+
+.client2 { width: 40%;
+           float: right;
+           padding-top: 20px; }
+
+
+/*client review ends*/
+
+/*footer part*/
+
+.footer_part_section { background: #f8f8f8;
+                       width: 100%;
+                       padding: 50px 0;
+                       /*margin-top: 60px;
+                       padding-top: 50px;*/ 
+                       /*border: 2px solid red;*/}
+
+.footer_part { width: 960px;
+               margin: 0 auto; }
+
+.footer_text { text-align: center;
+               font-family: sans-serif; }
+
+
+.contact_form { width: 600px;
+                height: 300px;
+                
+                margin: 0 auto; }
+
+input { width: 48%;
+        height: 20px;
+         }
+
+textarea { width: 97%;
+           height: 170px;
+            margin-top: 20px;
+            margin-bottom: 30px;} 
+        
+ .submit_btn {
+ 	width:50% ;
+ 	height:35px; 
+    font-size: 20px;
+    font-family: sans-serif; 
+    border-radius:5px; 
+    border:1px solid black;
+    background: none;
+    margin-left: 230px;
+    padding: 10px 20px;
+}      
+
+.submit_btn  { text-decoration: none;
+                color: black;
+                width: 100%;
+                text-align: center;
+              }
+
+.contact_form a:hover { background-color: #22b4ff;
+                      color: white;
+                      border: none; }
+
+.last_part { width: 960px;
+            margin: 0 auto; }
+
+#janeDoe { text-align: center;
+           font-family: sans-serif;
+           color: #22b4ff;
+           margin-top: 40px; }
+
+ .footer_icon { padding-left: 390px;
+                 padding-bottom: 20px; }          
+
+
+.footer_icon a { background: none;
+    display: inline-block;
+    border: 1px solid #212121;
+    color: #212121;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 5px;
+     } 
+
+.footer_icon a:hover { background-color: #22b4ff;
+                      color: white;
+                      border: none; }
+
+.copy_right { text-align: center;
+              font-family: sans-serif; }
+
+
+
+
+
+/*footer part ends*/
